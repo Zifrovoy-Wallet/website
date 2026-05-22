@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { StatsSection } from "./components/StatsSection";
@@ -9,23 +10,39 @@ import { TestimonialsSection } from "./components/TestimonialsSection";
 import { FaqSection } from "./components/FaqSection";
 import { CtaSection } from "./components/CtaSection";
 import { Footer } from "./components/Footer";
+import { Loader } from "./components/Loader";
+
+// Safety net: if the hero video stalls (slow network, codec issue, blocked
+// autoplay), force-clear the loader after this many ms so the page is never
+// stuck behind the splash.
+const LOADER_TIMEOUT_MS = 5000;
 
 export default function App() {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const t = window.setTimeout(() => setReady(true), LOADER_TIMEOUT_MS);
+    return () => window.clearTimeout(t);
+  }, []);
+
   return (
-    <div className="flex flex-col bg-page">
-      <div className="h-screen flex flex-col overflow-hidden relative">
-        <Navbar />
-        <HeroSection />
+    <>
+      <Loader visible={!ready} />
+      <div className="flex flex-col bg-page">
+        <div className="h-screen flex flex-col overflow-hidden relative">
+          <Navbar />
+          <HeroSection onReady={() => setReady(true)} />
+        </div>
+        <StatsSection />
+        <InfoSection />
+        <PerpsSection />
+        <HowToStartSection />
+        <TestimonialsSection />
+        <SocialLoginSection />
+        <FaqSection />
+        <CtaSection />
+        <Footer />
       </div>
-      <StatsSection />
-      <InfoSection />
-      <PerpsSection />
-      <HowToStartSection />
-      <TestimonialsSection />
-      <SocialLoginSection />
-      <FaqSection />
-      <CtaSection />
-      <Footer />
-    </div>
+    </>
   );
 }

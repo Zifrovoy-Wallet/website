@@ -73,7 +73,11 @@ const networks: { name: string; style: React.CSSProperties }[] = [
   },
 ];
 
-export function HeroSection() {
+interface HeroSectionProps {
+  onReady?: () => void;
+}
+
+export function HeroSection({ onReady }: HeroSectionProps = {}) {
   const { t } = useI18n();
   const theme = useTheme();
   return (
@@ -89,6 +93,8 @@ export function HeroSection() {
           loop
           playsInline
           src={theme.assets.hero}
+          onCanPlay={onReady}
+          onError={onReady}
         />
         <div className="relative z-10 flex flex-col items-start justify-start h-full p-12 pt-36">
           <h1
