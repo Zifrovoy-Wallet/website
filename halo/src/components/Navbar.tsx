@@ -1,4 +1,3 @@
-import { LogoIcon } from "./LogoIcon";
 import { LANGS, useI18n } from "../i18n";
 
 export function Navbar() {
@@ -15,7 +14,12 @@ export function Navbar() {
     <nav className="absolute top-0 left-0 right-0 z-20 px-6 py-5">
       <div className="max-w-[88rem] mx-auto flex items-center justify-between gap-4">
         <a href="#" className="flex items-center gap-2 text-black">
-          <LogoIcon className="w-7 h-7" />
+          <img
+            src="/logo.png"
+            alt=""
+            className="w-7 h-7"
+            style={{ filter: "brightness(0)" }}
+          />
           <span className="text-2xl font-medium tracking-tight">Zifrovoy</span>
         </a>
         <div className="hidden md:flex items-center gap-8">

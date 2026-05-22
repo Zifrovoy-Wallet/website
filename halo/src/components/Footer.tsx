@@ -1,4 +1,3 @@
-import { LogoIcon } from "./LogoIcon";
 import { useI18n } from "../i18n";
 
 const socials: { label: string; svg: React.ReactNode }[] = [
@@ -43,7 +42,12 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 py-12">
           <div className="col-span-2 max-w-sm">
             <div className="flex items-center gap-2 text-black mb-4">
-              <LogoIcon className="w-6 h-6" />
+              <img
+                src="/logo.png"
+                alt=""
+                className="w-6 h-6"
+                style={{ filter: "brightness(0)" }}
+              />
               <span className="text-xl font-medium tracking-tight">
                 Zifrovoy
               </span>

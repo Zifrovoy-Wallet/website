@@ -1,5 +1,3 @@
-import { LogoIcon } from "./LogoIcon";
-
 interface LoaderProps {
   visible: boolean;
 }
@@ -23,7 +21,12 @@ export function Loader({ visible }: LoaderProps) {
       }}
     >
       <div className="flex flex-col items-center gap-4">
-        <LogoIcon className="w-12 h-12 text-black loader-pulse" />
+        <img
+          src="/logo.png"
+          alt=""
+          className="w-14 h-14 loader-pulse"
+          style={{ filter: "brightness(0)" }}
+        />
         <span
           className="text-black text-xl font-medium tracking-tight"
           style={{ letterSpacing: "-0.02em", opacity: 0.85 }}
