@@ -1,0 +1,75 @@
+/* Fallback that ships today — close geometric grotesque to TT Norms Pro.
+   @import must come first per PostCSS spec. */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TT Norms Pro — drop /public/fonts/tt-norms-pro-*.woff2 to use the real face.
+   Falls back to Inter Tight when the files are absent. */
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("/fonts/tt-norms-pro-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("/fonts/tt-norms-pro-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: "TT Norms Pro", "Inter Tight", "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: inherit;
+}
+:root {
+  --body-bg: #f5f5f5;
+  --dark: #2b2644;
+  --tint: #e8e0f5;
+  --accent: #c7b5f0;
+  --cta-bg: #000000;
+  --cta-bg-hover: #1f2937;
+  --pattern-dot: rgba(43, 38, 68, 0.07);
+  --pattern-url: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%232B2644' stroke-width='0.9' opacity='0.1' stroke-linecap='round'><circle cx='40' cy='40' r='24'/><circle cx='40' cy='40' r='12'/><path d='M40 34L46 40L40 46L34 40Z'/><path d='M40 28V16M40 52V64M28 40H16M52 40H64'/><path d='M48.5 31.5L57 23M48.5 48.5L57 57M31.5 48.5L23 57M31.5 31.5L23 23'/><circle cx='40' cy='4' r='1.2'/><circle cx='40' cy='76' r='1.2'/><circle cx='4' cy='40' r='1.2'/><circle cx='76' cy='40' r='1.2'/></g></svg>");
+}
+body {
+  margin: 0;
+  background: var(--body-bg);
+  transition: background-color 250ms ease;
+}
+
+/* Dot-grid texture for dark feature/step cards AND red pill CTAs. Sits on
+   top of the element's background-color (set inline as theme.dark or via
+   --cta-bg), reads as a tactile grain across both the red (kg) and purple
+   (default) palettes. Opacity tuned to read clearly without competing with
+   text. Tile size kept tight enough to show meaningful structure on the
+   smaller pill buttons (~3-4 rows of dots at 40px button height). */
+.bg-dot-pattern {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.14) 1.2px,
+    transparent 0
+  );
+  background-size: 12px 12px;
+}
+
+/* Page-level ornament texture for section backgrounds. SVG sun motif
+   (8-ray rosette) tiled at 48px. The actual SVG (and stroke colour) is
+   set per-theme via --pattern-url so the warm-red /kg variant gets a
+   deeper, more saturated mark than the cool default. Distinct structure
+   from .bg-dot-pattern (white radial dots used inside cards) so the two
+   textures coexist when cards sit over a section. */
+.bg-page {
+  background-color: var(--body-bg);
+  background-image: var(--pattern-url);
+}
