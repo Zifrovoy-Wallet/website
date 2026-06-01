@@ -80,7 +80,7 @@ const themes: Record<Variant, Theme> = {
     cta: "#000000",
     ctaHover: "#1F2937",
     patternDot: "rgba(43,38,68,0.07)",
-    patternUrl: ornamentUrl("#2B2644", 0.1),
+    patternUrl: "none",
     tintRgb: "214,207,237",
     darkAccentRgb: "180,170,210",
     avatarGradOnDark: "linear-gradient(135deg, #E8E0F5, #8B7AC4)",
