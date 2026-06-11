@@ -32,6 +32,21 @@ type Dict = {
     cta: string;
   };
   stats: { s1: string; s2: string; s3: string; s4: string };
+  smart: {
+    eyebrow: string;
+    heading1: string;
+    heading2: string;
+    lead: string;
+    tag1: string;
+    f1Title: string;
+    f1Body: string;
+    tag2: string;
+    f2Title: string;
+    f2Body: string;
+    tag3: string;
+    f3Title: string;
+    f3Body: string;
+  };
   info: {
     eyebrow: string;
     heading: string;
@@ -160,6 +175,24 @@ const ru: Dict = {
     s2: "Активных пользователей",
     s3: "Объём транзакций",
     s4: "Минимальная комиссия",
+  },
+  smart: {
+    eyebrow: "Фокус кошелька",
+    heading1: "Умный доход —",
+    heading2: "на автопилоте.",
+    lead: "Zifrovoy создан не просто хранить активы, а заставить их работать. AI-автоматизация, копитрейдинг и пассивные стратегии — деньги растут, пока вы заняты своими делами.",
+    tag1: "AI-автоматизация",
+    f1Title: "Алгоритмы вместо эмоций",
+    f1Body:
+      "Умные алгоритмы следят за рынком круглосуточно и подсказывают лучшие точки входа — без паники и бессонных ночей.",
+    tag2: "Копитрейдинг",
+    f2Title: "Опыт топ-трейдеров",
+    f2Body:
+      "Повторяйте сделки лучших автоматически — их стратегия работает на ваш портфель в один клик.",
+    tag3: "Пассивный доход",
+    f3Title: "Деньги работают сами",
+    f3Body:
+      "Стратегии работают на автопилоте: активы остаются под вашим контролем, а доход капает, пока вы заняты другим.",
   },
   info: {
     eyebrow: "Почему Zifrovoy",
@@ -329,6 +362,24 @@ const en: Dict = {
     s3: "Transaction volume",
     s4: "Minimum fee",
   },
+  smart: {
+    eyebrow: "What the wallet is built for",
+    heading1: "Smart income —",
+    heading2: "on autopilot.",
+    lead: "Zifrovoy isn't built to just hold your assets — it puts them to work. AI automation, copy trading and passive strategies grow your money while you get on with your day.",
+    tag1: "AI automation",
+    f1Title: "Algorithms, not emotions",
+    f1Body:
+      "Smart algorithms watch the market around the clock and surface the best entry points — no panic, no sleepless nights.",
+    tag2: "Copy trading",
+    f2Title: "Top traders' edge",
+    f2Body:
+      "Mirror the best traders automatically — their strategy works for your portfolio in a single click.",
+    tag3: "Passive income",
+    f3Title: "Money that works itself",
+    f3Body:
+      "Strategies run on autopilot: your assets stay under your control while income builds in the background.",
+  },
   info: {
     eyebrow: "Why Zifrovoy",
     heading: "Meet Zifrovoy.",
@@ -496,6 +547,24 @@ const kk: Dict = {
     s2: "Белсенді қолданушылар",
     s3: "Транзакциялар көлемі",
     s4: "Ең төменгі комиссия",
+  },
+  smart: {
+    eyebrow: "Әмиянның фокусы",
+    heading1: "Ақылды табыс —",
+    heading2: "автопилотта.",
+    lead: "Zifrovoy активтерді жай сақтау үшін емес, оларды жұмыс істету үшін жасалған. AI-автоматтандыру, копитрейдинг және пассивті стратегиялар — сіз өз ісіңізбен айналысып жүргенде ақша өседі.",
+    tag1: "AI-автоматтандыру",
+    f1Title: "Эмоцияның орнына алгоритмдер",
+    f1Body:
+      "Ақылды алгоритмдер нарықты тәулік бойы бақылап, ең жақсы кіру нүктелерін ұсынады — дүрбелеңсіз және ұйқысыз түндерсіз.",
+    tag2: "Копитрейдинг",
+    f2Title: "Үздік трейдерлердің тәжірибесі",
+    f2Body:
+      "Үздіктердің мәмілелерін автоматты түрде қайталаңыз — олардың стратегиясы бір басумен сіздің портфеліңізге жұмыс істейді.",
+    tag3: "Пассивті табыс",
+    f3Title: "Ақша өзі жұмыс істейді",
+    f3Body:
+      "Стратегиялар автопилотта жұмыс істейді: активтер сіздің бақылауыңызда қалады, ал табыс сіз басқа іспен айналысып жүргенде жиналады.",
   },
   info: {
     eyebrow: "Неліктен Zifrovoy",
@@ -665,6 +734,24 @@ const ky: Dict = {
     s3: "Транзакциялардын көлөмү",
     s4: "Эң аз комиссия",
   },
+  smart: {
+    eyebrow: "Капчыктын фокусу",
+    heading1: "Акылдуу киреше —",
+    heading2: "автопилотто.",
+    lead: "Zifrovoy активдерди жөн эле сактоо үчүн эмес, аларды иштетүү үчүн жаралган. AI-автоматташтыруу, копитрейдинг жана пассивдүү стратегиялар — сиз өз ишиңиз менен алектенип жүргөндө акча өсөт.",
+    tag1: "AI-автоматташтыруу",
+    f1Title: "Эмоциянын ордуна алгоритмдер",
+    f1Body:
+      "Акылдуу алгоритмдер рынокту сутка бою байкап, эң жакшы кирүү чекиттерин сунуштайт — дүрбөлөңсүз жана уйкусуз түндөрсүз.",
+    tag2: "Копитрейдинг",
+    f2Title: "Мыкты трейдерлердин тажрыйбасы",
+    f2Body:
+      "Мыктылардын бүтүмдөрүн автоматтык түрдө кайталаңыз — алардын стратегиясы бир баскыч менен портфелиңизге иштейт.",
+    tag3: "Пассивдүү киреше",
+    f3Title: "Акча өзү иштейт",
+    f3Body:
+      "Стратегиялар автопилотто иштейт: активдер сиздин көзөмөлүңүздө калат, ал эми киреше сиз башка иш менен алек болуп жүргөндө топтолот.",
+  },
   info: {
     eyebrow: "Эмне үчүн Zifrovoy",
     heading: "Таанышыңыз — Zifrovoy.",
@@ -832,6 +919,24 @@ const uz: Dict = {
     s2: "Faol foydalanuvchilar",
     s3: "Tranzaksiyalar hajmi",
     s4: "Minimal komissiya",
+  },
+  smart: {
+    eyebrow: "Hamyonning fokusi",
+    heading1: "Aqlli daromad —",
+    heading2: "avtopilotda.",
+    lead: "Zifrovoy aktivlarni shunchaki saqlash uchun emas, ularni ishlatish uchun yaratilgan. AI-avtomatlashtirish, copy trading va passiv strategiyalar — siz o'z ishingiz bilan band bo'lganingizda pul o'sadi.",
+    tag1: "AI-avtomatlashtirish",
+    f1Title: "Hissiyot o'rniga algoritmlar",
+    f1Body:
+      "Aqlli algoritmlar bozorni kechayu kunduz kuzatib, eng yaxshi kirish nuqtalarini taklif qiladi — vahimasiz va uyqusiz tunlarsiz.",
+    tag2: "Copy trading",
+    f2Title: "Eng yaxshi treyderlar tajribasi",
+    f2Body:
+      "Eng yaxshilarning bitimlarini avtomatik takrorlang — ularning strategiyasi bir bosishda portfelingiz uchun ishlaydi.",
+    tag3: "Passiv daromad",
+    f3Title: "Pul o'zi ishlaydi",
+    f3Body:
+      "Strategiyalar avtopilotda ishlaydi: aktivlar sizning nazoratingizda qoladi, daromad esa siz boshqa ish bilan band bo'lganingizda to'planadi.",
   },
   info: {
     eyebrow: "Nima uchun Zifrovoy",

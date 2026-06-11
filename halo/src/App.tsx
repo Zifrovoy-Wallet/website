@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { StatsSection } from "./components/StatsSection";
 import { InfoSection } from "./components/InfoSection";
+import { SmartIncomeSection } from "./components/SmartIncomeSection";
 import { PerpsSection } from "./components/PerpsSection";
 import { HowToStartSection } from "./components/HowToStartSection";
 import { SocialLoginSection } from "./components/SocialLoginSection";
@@ -35,6 +36,7 @@ export default function App() {
         </div>
         <StatsSection />
         <InfoSection />
+        <SmartIncomeSection />
         <PerpsSection />
         <HowToStartSection />
         <TestimonialsSection />
