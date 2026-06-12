@@ -46,6 +46,11 @@ type Dict = {
     tag3: string;
     f3Title: string;
     f3Body: string;
+    liveLabel: string;
+    pnlLabel: string;
+    nodeScan: string;
+    nodeEngine: string;
+    nodeExecute: string;
   };
   info: {
     eyebrow: string;
@@ -178,7 +183,7 @@ const ru: Dict = {
   },
   smart: {
     eyebrow: "Фокус кошелька",
-    heading1: "Умный доход —",
+    heading1: "Умный доход -",
     heading2: "на автопилоте.",
     lead: "Zifrovoy создан не просто хранить активы, а заставить их работать. AI-автоматизация, копитрейдинг и пассивные стратегии — деньги растут, пока вы заняты своими делами.",
     tag1: "AI-автоматизация",
@@ -193,6 +198,11 @@ const ru: Dict = {
     f3Title: "Деньги работают сами",
     f3Body:
       "Стратегии работают на автопилоте: активы остаются под вашим контролем, а доход капает, пока вы заняты другим.",
+    liveLabel: "В реальном времени",
+    pnlLabel: "Доходность портфеля",
+    nodeScan: "Рынки",
+    nodeEngine: "AI-движок",
+    nodeExecute: "Сделка",
   },
   info: {
     eyebrow: "Почему Zifrovoy",
@@ -364,7 +374,7 @@ const en: Dict = {
   },
   smart: {
     eyebrow: "What the wallet is built for",
-    heading1: "Smart income —",
+    heading1: "Smart income -",
     heading2: "on autopilot.",
     lead: "Zifrovoy isn't built to just hold your assets — it puts them to work. AI automation, copy trading and passive strategies grow your money while you get on with your day.",
     tag1: "AI automation",
@@ -379,6 +389,11 @@ const en: Dict = {
     f3Title: "Money that works itself",
     f3Body:
       "Strategies run on autopilot: your assets stay under your control while income builds in the background.",
+    liveLabel: "Live",
+    pnlLabel: "Portfolio PnL",
+    nodeScan: "Markets",
+    nodeEngine: "AI engine",
+    nodeExecute: "Execute",
   },
   info: {
     eyebrow: "Why Zifrovoy",
@@ -550,7 +565,7 @@ const kk: Dict = {
   },
   smart: {
     eyebrow: "Әмиянның фокусы",
-    heading1: "Ақылды табыс —",
+    heading1: "Ақылды табыс -",
     heading2: "автопилотта.",
     lead: "Zifrovoy активтерді жай сақтау үшін емес, оларды жұмыс істету үшін жасалған. AI-автоматтандыру, копитрейдинг және пассивті стратегиялар — сіз өз ісіңізбен айналысып жүргенде ақша өседі.",
     tag1: "AI-автоматтандыру",
@@ -565,6 +580,11 @@ const kk: Dict = {
     f3Title: "Ақша өзі жұмыс істейді",
     f3Body:
       "Стратегиялар автопилотта жұмыс істейді: активтер сіздің бақылауыңызда қалады, ал табыс сіз басқа іспен айналысып жүргенде жиналады.",
+    liveLabel: "Нақты уақытта",
+    pnlLabel: "Портфель табысы",
+    nodeScan: "Нарықтар",
+    nodeEngine: "AI-қозғалтқыш",
+    nodeExecute: "Мәміле",
   },
   info: {
     eyebrow: "Неліктен Zifrovoy",
@@ -736,7 +756,7 @@ const ky: Dict = {
   },
   smart: {
     eyebrow: "Капчыктын фокусу",
-    heading1: "Акылдуу киреше —",
+    heading1: "Акылдуу киреше -",
     heading2: "автопилотто.",
     lead: "Zifrovoy активдерди жөн эле сактоо үчүн эмес, аларды иштетүү үчүн жаралган. AI-автоматташтыруу, копитрейдинг жана пассивдүү стратегиялар — сиз өз ишиңиз менен алектенип жүргөндө акча өсөт.",
     tag1: "AI-автоматташтыруу",
@@ -751,6 +771,11 @@ const ky: Dict = {
     f3Title: "Акча өзү иштейт",
     f3Body:
       "Стратегиялар автопилотто иштейт: активдер сиздин көзөмөлүңүздө калат, ал эми киреше сиз башка иш менен алек болуп жүргөндө топтолот.",
+    liveLabel: "Реалдуу убакытта",
+    pnlLabel: "Портфель кирешеси",
+    nodeScan: "Рыноктор",
+    nodeEngine: "AI-кыймылдаткыч",
+    nodeExecute: "Бүтүм",
   },
   info: {
     eyebrow: "Эмне үчүн Zifrovoy",
@@ -922,7 +947,7 @@ const uz: Dict = {
   },
   smart: {
     eyebrow: "Hamyonning fokusi",
-    heading1: "Aqlli daromad —",
+    heading1: "Aqlli daromad -",
     heading2: "avtopilotda.",
     lead: "Zifrovoy aktivlarni shunchaki saqlash uchun emas, ularni ishlatish uchun yaratilgan. AI-avtomatlashtirish, copy trading va passiv strategiyalar — siz o'z ishingiz bilan band bo'lganingizda pul o'sadi.",
     tag1: "AI-avtomatlashtirish",
@@ -937,6 +962,11 @@ const uz: Dict = {
     f3Title: "Pul o'zi ishlaydi",
     f3Body:
       "Strategiyalar avtopilotda ishlaydi: aktivlar sizning nazoratingizda qoladi, daromad esa siz boshqa ish bilan band bo'lganingizda to'planadi.",
+    liveLabel: "Real vaqtda",
+    pnlLabel: "Portfel daromadi",
+    nodeScan: "Bozorlar",
+    nodeEngine: "AI-dvigatel",
+    nodeExecute: "Bitim",
   },
   info: {
     eyebrow: "Nima uchun Zifrovoy",

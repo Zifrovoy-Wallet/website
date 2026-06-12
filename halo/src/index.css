@@ -73,3 +73,99 @@ body {
   background-color: var(--body-bg);
   background-image: var(--pattern-url);
 }
+
+/* ── Smart-income AI engine console animations ─────────────────────────
+   Self-contained decorative motion for the SmartIncomeSection illustration:
+   a faux trading-agent terminal that scans, routes, executes and monitors.
+   All keyframes are GPU-friendly (transform/opacity) and fully disabled
+   under prefers-reduced-motion. */
+
+/* Blinking terminal caret after the currently-typing log line. */
+@keyframes zf-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.zf-cursor {
+  animation: zf-blink 1s steps(1) infinite;
+}
+
+/* Pulse of data travelling left→right along the route track
+   (Markets → AI engine → Execute). */
+@keyframes zf-route {
+  0% { left: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+.zf-route-pulse {
+  animation: zf-route 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Faint vertical scan line sweeping across the PnL sparkline. */
+@keyframes zf-sweep {
+  0% { transform: translateX(-8%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(108%); opacity: 0; }
+}
+.zf-sweep {
+  animation: zf-sweep 3.6s ease-in-out infinite;
+}
+
+/* Sparkline draw-in (dash offset set inline via --len). */
+@keyframes zf-draw {
+  from { stroke-dashoffset: var(--len, 400); }
+  to { stroke-dashoffset: 0; }
+}
+.zf-draw {
+  animation: zf-draw 1.6s ease-out forwards;
+}
+
+/* Light pulse marching up the PnL line. Dash array total equals the path
+   length so the loop is perfectly seamless (no visible jump). */
+@keyframes zf-flow {
+  from { stroke-dashoffset: 297; }
+  to { stroke-dashoffset: 0; }
+}
+.zf-flow {
+  animation: zf-flow 2.2s linear infinite;
+}
+
+/* Equalizer bars — the "monitoring 24/7" rhythm. Also reused for the
+   passive-income pillar card. */
+@keyframes zf-bar {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+.zf-bar {
+  transform-origin: bottom;
+  animation: zf-bar 1.2s ease-in-out infinite;
+}
+
+/* Copy-trading pillar: a follower "echo" that mirrors the leader icon. */
+@keyframes zf-echo {
+  0% { transform: translateX(0); opacity: 0.45; }
+  50% { transform: translateX(8px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 0.45; }
+}
+.zf-echo {
+  animation: zf-echo 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zf-cursor,
+  .zf-route-pulse,
+  .zf-sweep,
+  .zf-draw,
+  .zf-flow,
+  .zf-bar,
+  .zf-echo {
+    animation: none;
+  }
+  .zf-draw {
+    stroke-dashoffset: 0;
+  }
+  .zf-flow {
+    display: none;
+  }
+}
