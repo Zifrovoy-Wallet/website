@@ -1,8 +1,8 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { useI18n } from "../i18n";
 import { useTheme } from "../theme";
 
-// Supported EVM networks shown in the hero marquee — distinct font treatments
+// Supported EVM networks shown in the hero marquee - distinct font treatments
 // match the Halo brand-strip aesthetic.
 const networks: { name: string; style: React.CSSProperties }[] = [
   {
@@ -97,6 +97,13 @@ export function HeroSection({ onReady }: HeroSectionProps = {}) {
           onError={onReady}
         />
         <div className="relative z-10 flex flex-col items-start justify-start h-full p-12 pt-36">
+          <span
+            className="inline-flex items-center gap-2 bg-black/[0.06] text-black/70 text-xs font-medium uppercase px-3 py-1.5 rounded-full mb-5 backdrop-blur-sm"
+            style={{ letterSpacing: "0.14em" }}
+          >
+            <Sparkles className="w-3.5 h-3.5" strokeWidth={2} />
+            {t.hero.badge}
+          </span>
           <h1
             className="text-black text-5xl md:text-6xl font-medium leading-tight max-w-xl mb-4"
             style={{ letterSpacing: "-0.04em" }}

@@ -12,7 +12,7 @@ export function InfoSection() {
   return (
     <section id="why" className="bg-page px-6 py-16">
       <div className="max-w-[88rem] mx-auto">
-        {/* Row 1 — headline + lead */}
+        {/* Row 1 - headline + lead */}
         <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-start">
           <div>
             <p className="text-black/60 text-sm mb-3">{t.info.eyebrow}</p>
@@ -37,9 +37,9 @@ export function InfoSection() {
           </p>
         </Reveal>
 
-        {/* Row 2 — feature cards */}
+        {/* Row 2 - feature cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Card 1 — image background, spans 2 on lg */}
+          {/* Card 1 - image background, spans 2 on lg */}
           <Reveal
             delay={0}
             className={`group rounded-2xl p-7 min-h-80 flex flex-col justify-between sm:col-span-2 lg:col-span-2 overflow-hidden relative ${cardLift}`}
@@ -65,7 +65,7 @@ export function InfoSection() {
             </p>
           </Reveal>
 
-          {/* Card 2 — dark */}
+          {/* Card 2 - dark */}
           <Reveal
             delay={120}
             className={`bg-dot-pattern rounded-2xl p-7 min-h-80 flex flex-col justify-between ${cardLift}`}
@@ -79,7 +79,7 @@ export function InfoSection() {
             <p className="text-white/60 text-base">{t.info.card2Body}</p>
           </Reveal>
 
-          {/* Card 3 — dark */}
+          {/* Card 3 - dark */}
           <Reveal
             delay={220}
             className={`bg-dot-pattern rounded-2xl p-7 min-h-80 flex flex-col justify-between ${cardLift}`}

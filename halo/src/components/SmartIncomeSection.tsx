@@ -1,4 +1,4 @@
-import { Sparkles, Users, TrendingUp } from "lucide-react";
+import { Sparkles, Users, TrendingUp, MessageCircle } from "lucide-react";
 import { useI18n } from "../i18n";
 import { useTheme } from "../theme";
 import { Reveal } from "./Reveal";
@@ -16,6 +16,12 @@ export function SmartIncomeSection() {
       <div className="max-w-[88rem] mx-auto">
         {/* Centered heading */}
         <Reveal className="text-center mb-12">
+          <p
+            className="text-black/50 text-xs sm:text-sm font-medium uppercase mb-4"
+            style={{ letterSpacing: "0.22em" }}
+          >
+            {t.smart.eyebrow}
+          </p>
           <h2
             className="text-black text-4xl sm:text-5xl md:text-6xl font-medium leading-none"
             style={{ letterSpacing: "-0.04em" }}
@@ -32,15 +38,16 @@ export function SmartIncomeSection() {
           <AiEngineConsole />
         </Reveal>
 
-        {/* Lead — sits as the intro to the three pillars below */}
+        {/* Lead - sits as the intro to the three pillars below */}
         <Reveal className="max-w-2xl mx-auto text-center mt-14 mb-7">
           <p className="text-black/60 text-base md:text-lg leading-relaxed">
             {t.smart.lead}
           </p>
         </Reveal>
 
-        {/* Three focus pillars — dark, lavender, dark */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Three focus pillars - dark, lavender, dark */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {/* AI assistant - dark */}
           <Reveal
             delay={0}
             className={`bg-dot-pattern group rounded-2xl p-7 min-h-[240px] flex flex-col justify-between ${cardLift}`}
@@ -53,8 +60,8 @@ export function SmartIncomeSection() {
                   className="absolute inset-[7px] rounded-full border border-white/15 animate-ping"
                   style={{ animationDelay: "0.6s" }}
                 />
-                <Sparkles
-                  className="relative w-7 h-7 text-white transition-transform duration-700 ease-out group-hover:rotate-180"
+                <MessageCircle
+                  className="relative w-7 h-7 text-white transition-transform duration-500 group-hover:scale-110"
                   strokeWidth={1.6}
                 />
               </div>
@@ -62,30 +69,32 @@ export function SmartIncomeSection() {
                 className="text-white/50 text-xs uppercase"
                 style={{ letterSpacing: "0.14em" }}
               >
-                {t.smart.tag1}
+                {t.smart.tagChat}
               </span>
             </div>
             <div>
               <h4 className="text-white text-xl font-medium leading-snug mb-2">
-                {t.smart.f1Title}
+                {t.smart.fChatTitle}
               </h4>
-              <p className="text-white/60 text-sm">{t.smart.f1Body}</p>
+              <p className="text-white/60 text-sm">{t.smart.fChatBody}</p>
             </div>
           </Reveal>
 
+          {/* AI automation - tint */}
           <Reveal
-            delay={120}
+            delay={100}
             className={`group rounded-2xl p-7 min-h-[240px] flex flex-col justify-between ${cardLift}`}
             style={{ backgroundColor: theme.tint }}
           >
             <div className="flex items-center justify-between">
               <div className="relative w-11 h-11 flex items-center justify-center">
-                <Users
-                  className="zf-echo absolute inset-0 m-auto w-7 h-7 text-black"
-                  strokeWidth={1.6}
+                <span className="absolute inset-0 rounded-full border border-black/15 animate-ping" />
+                <span
+                  className="absolute inset-[7px] rounded-full border border-black/10 animate-ping"
+                  style={{ animationDelay: "0.6s" }}
                 />
-                <Users
-                  className="relative w-7 h-7 text-black transition-transform duration-500 group-hover:scale-110"
+                <Sparkles
+                  className="relative w-7 h-7 text-black transition-transform duration-700 ease-out group-hover:rotate-180"
                   strokeWidth={1.6}
                 />
               </div>
@@ -93,7 +102,7 @@ export function SmartIncomeSection() {
                 className="text-black/40 text-xs uppercase"
                 style={{ letterSpacing: "0.14em" }}
               >
-                {t.smart.tag2}
+                {t.smart.tag1}
               </span>
             </div>
             <div>
@@ -101,50 +110,86 @@ export function SmartIncomeSection() {
                 className="text-black text-xl font-medium leading-snug mb-2"
                 style={{ letterSpacing: "-0.02em" }}
               >
-                {t.smart.f2Title}
+                {t.smart.f1Title}
               </h4>
-              <p className="text-black/60 text-sm">{t.smart.f2Body}</p>
+              <p className="text-black/60 text-sm">{t.smart.f1Body}</p>
             </div>
           </Reveal>
 
+          {/* Copy trading - dark */}
           <Reveal
-            delay={240}
+            delay={200}
             className={`bg-dot-pattern group rounded-2xl p-7 min-h-[240px] flex flex-col justify-between ${cardLift}`}
             style={{ backgroundColor: theme.dark }}
           >
             <div className="flex items-center justify-between">
+              <div className="relative w-11 h-11 flex items-center justify-center">
+                <Users
+                  className="zf-echo absolute inset-0 m-auto w-7 h-7 text-white"
+                  strokeWidth={1.6}
+                />
+                <Users
+                  className="relative w-7 h-7 text-white transition-transform duration-500 group-hover:scale-110"
+                  strokeWidth={1.6}
+                />
+              </div>
+              <span
+                className="text-white/50 text-xs uppercase"
+                style={{ letterSpacing: "0.14em" }}
+              >
+                {t.smart.tag2}
+              </span>
+            </div>
+            <div>
+              <h4 className="text-white text-xl font-medium leading-snug mb-2">
+                {t.smart.f2Title}
+              </h4>
+              <p className="text-white/60 text-sm">{t.smart.f2Body}</p>
+            </div>
+          </Reveal>
+
+          {/* Passive income - tint */}
+          <Reveal
+            delay={300}
+            className={`group rounded-2xl p-7 min-h-[240px] flex flex-col justify-between ${cardLift}`}
+            style={{ backgroundColor: theme.tint }}
+          >
+            <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <TrendingUp
-                  className="w-7 h-7 text-white transition-transform duration-500 group-hover:-translate-y-1 group-hover:translate-x-1"
+                  className="w-7 h-7 text-black transition-transform duration-500 group-hover:-translate-y-1 group-hover:translate-x-1"
                   strokeWidth={1.6}
                 />
                 <div className="flex items-end gap-[3px] h-6">
                   <span
-                    className="zf-bar block w-1.5 rounded-sm bg-white/30 transition-colors duration-300 group-hover:bg-emerald-300/80"
+                    className="zf-bar block w-1.5 rounded-sm bg-black/25 transition-colors duration-300 group-hover:bg-black/50"
                     style={{ height: "45%" }}
                   />
                   <span
-                    className="zf-bar block w-1.5 rounded-sm bg-white/40 transition-colors duration-300 group-hover:bg-emerald-300/80"
+                    className="zf-bar block w-1.5 rounded-sm bg-black/35 transition-colors duration-300 group-hover:bg-black/50"
                     style={{ height: "75%", animationDelay: "0.15s" }}
                   />
                   <span
-                    className="zf-bar block w-1.5 rounded-sm bg-white/55 transition-colors duration-300 group-hover:bg-emerald-300/80"
+                    className="zf-bar block w-1.5 rounded-sm bg-black/50 transition-colors duration-300 group-hover:bg-black/60"
                     style={{ height: "100%", animationDelay: "0.3s" }}
                   />
                 </div>
               </div>
               <span
-                className="text-white/50 text-xs uppercase"
+                className="text-black/40 text-xs uppercase"
                 style={{ letterSpacing: "0.14em" }}
               >
                 {t.smart.tag3}
               </span>
             </div>
             <div>
-              <h4 className="text-white text-xl font-medium leading-snug mb-2">
+              <h4
+                className="text-black text-xl font-medium leading-snug mb-2"
+                style={{ letterSpacing: "-0.02em" }}
+              >
                 {t.smart.f3Title}
               </h4>
-              <p className="text-white/60 text-sm">{t.smart.f3Body}</p>
+              <p className="text-black/60 text-sm">{t.smart.f3Body}</p>
             </div>
           </Reveal>
         </div>

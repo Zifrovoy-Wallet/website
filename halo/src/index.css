@@ -1,4 +1,4 @@
-/* Fallback that ships today — close geometric grotesque to TT Norms Pro.
+/* Fallback that ships today - close geometric grotesque to TT Norms Pro.
    @import must come first per PostCSS spec. */
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
 
@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TT Norms Pro — drop /public/fonts/tt-norms-pro-*.woff2 to use the real face.
+/* TT Norms Pro - drop /public/fonts/tt-norms-pro-*.woff2 to use the real face.
    Falls back to Inter Tight when the files are absent. */
 @font-face {
   font-family: "TT Norms Pro";
@@ -131,7 +131,7 @@ body {
   animation: zf-flow 2.2s linear infinite;
 }
 
-/* Equalizer bars — the "monitoring 24/7" rhythm. Also reused for the
+/* Equalizer bars - the "monitoring 24/7" rhythm. Also reused for the
    passive-income pillar card. */
 @keyframes zf-bar {
   0%, 100% { transform: scaleY(0.3); }

@@ -3,28 +3,30 @@ import { useI18n } from "../i18n";
 import { useTheme } from "../theme";
 
 /* A looping log of agent steps. Kept as terminal-style shorthand (tickers,
-   numbers, symbols) so it reads as real system output in every locale —
+   numbers, symbols) so it reads as real system output in every locale -
    only the surrounding labels are translated. Each tag maps to a dot color. */
-type Tag = "scan" | "found" | "route" | "exec" | "watch" | "pnl" | "sync";
+type Tag = "chat" | "ai" | "auto" | "scan" | "found" | "watch" | "pnl" | "sync";
 
 const SCRIPT: { tag: Tag; text: string }[] = [
-  { tag: "scan", text: "scanning 25+ networks for alpha" },
-  { tag: "found", text: "trader 0x7a4f…e2 · +18.4% / 7d" },
-  { tag: "route", text: "routing 1,240 USDC → Hyperliquid" },
-  { tag: "exec", text: "ETH-PERP long 3× · filled" },
-  { tag: "watch", text: "stop -2.0% · target +9.0%" },
-  { tag: "pnl", text: "unrealized +4.27% ▲" },
-  { tag: "sync", text: "3 strategies live · 0 manual clicks" },
+  { tag: "chat", text: 'you · "grow my idle USDC safely"' },
+  { tag: "ai", text: "ai · matched 3 low-risk strategies" },
+  { tag: "auto", text: "automation · DCA ETH, weekly ✓" },
+  { tag: "scan", text: "analyzing 100+ chains 24/7" },
+  { tag: "found", text: "signal · top trader +18.4% / 7d" },
+  { tag: "watch", text: "alert · BTC volatility rising" },
+  { tag: "pnl", text: "blended APY 7.4% · risk low" },
+  { tag: "sync", text: "5 automations live · 0 manual clicks" },
 ];
 
 const TAG_COLOR: Record<Tag, string> = {
+  chat: "#A5B4FC", // indigo - user
+  ai: "#C7B5F0", // violet - assistant
+  auto: "#6EE7B7", // emerald
   scan: "#7DD3FC", // sky
-  found: "#C7B5F0", // violet
-  route: "#93C5FD", // blue
-  exec: "#6EE7B7", // emerald
+  found: "#F0ABFC", // fuchsia
   watch: "#FCD34D", // amber
   pnl: "#6EE7B7", // emerald
-  sync: "#F0ABFC", // fuchsia
+  sync: "#93C5FD", // blue
 };
 
 const MAX_VISIBLE = 5;
@@ -49,7 +51,7 @@ export function AiEngineConsole() {
   const iRef = useRef(0);
   const cRef = useRef(0);
 
-  // Typing loop — type the current line char-by-char, commit it to history,
+  // Typing loop - type the current line char-by-char, commit it to history,
   // then advance to the next script entry. Loops forever.
   useEffect(() => {
     if (prefersReducedMotion()) {
@@ -168,7 +170,7 @@ export function AiEngineConsole() {
                 d={`${SPARK} L280,72 L0,72 Z`}
                 fill="url(#zfSparkFill)"
               />
-              {/* base line — draws in once on reveal */}
+              {/* base line - draws in once on reveal */}
               <path
                 d={SPARK}
                 fill="none"
@@ -212,7 +214,7 @@ export function AiEngineConsole() {
           </div>
         </div>
 
-        {/* Equalizer — the "monitoring" rhythm */}
+        {/* Equalizer - the "monitoring" rhythm */}
         <div className="flex items-end gap-1 h-8">
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((b) => (
             <span

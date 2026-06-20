@@ -70,7 +70,7 @@ export function HowToStartSection() {
           </div>
         </Reveal>
 
-        {/* Step cards — alternating dark / lavender, phone mockups inside */}
+        {/* Step cards - alternating dark / lavender, phone mockups inside */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           {steps.map(({ n, title, body, Icon, variant, screen }, idx) => {
             const isLavender = variant === "lavender";

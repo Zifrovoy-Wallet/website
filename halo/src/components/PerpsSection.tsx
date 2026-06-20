@@ -81,7 +81,7 @@ export function PerpsSection() {
           </div>
         </Reveal>
 
-        {/* Feature row — 2 dark, 1 lavender (matches the section palette) */}
+        {/* Feature row - 2 dark, 1 lavender (matches the section palette) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Reveal
             delay={0}

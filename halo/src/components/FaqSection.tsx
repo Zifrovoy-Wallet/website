@@ -13,7 +13,7 @@ export function FaqSection() {
   return (
     <section id="faq" className="bg-page px-6 py-16">
       <div className="max-w-[88rem] mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
-        {/* LEFT — purple stack */}
+        {/* LEFT - purple stack */}
         <Reveal className="md:col-span-5 flex flex-col gap-4">
           {/* Headline card */}
           <div
@@ -53,7 +53,7 @@ export function FaqSection() {
             </a>
           </div>
 
-          {/* Support card — lavender */}
+          {/* Support card - lavender */}
           <div
             className="rounded-3xl p-8 flex items-center justify-between gap-6"
             style={{ backgroundColor: theme.tint }}
@@ -90,7 +90,7 @@ export function FaqSection() {
           </div>
         </Reveal>
 
-        {/* RIGHT — accordion inside lavender container */}
+        {/* RIGHT - accordion inside lavender container */}
         <Reveal
           delay={120}
           className="md:col-span-7 rounded-3xl p-4 md:p-5"

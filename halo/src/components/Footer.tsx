@@ -55,6 +55,11 @@ export function Footer() {
             <p className="text-black/60 text-sm leading-relaxed">
               {t.footer.description}
             </p>
+            <div className="mt-5 text-black/45 text-xs leading-relaxed">
+              <div className="text-black/60 font-medium">PROEKT TSIFROVOI OSOO</div>
+              <div>D-U-N-S® 44-756-0123</div>
+              <div>5, 18 per. Klubny, Bishkek, Kyrgyz Republic</div>
+            </div>
           </div>
           {cols.map((c) => (
             <div key={c.title}>
@@ -75,6 +80,10 @@ export function Footer() {
               </ul>
             </div>
           ))}
+        </div>
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pb-6">
+          <a href="/terms" className="text-black/60 hover:text-black text-xs transition-colors">{t.footer.terms}</a>
+          <a href="/privacy" className="text-black/60 hover:text-black text-xs transition-colors">{t.footer.privacy}</a>
         </div>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pt-8 border-t border-black/10">
           <span className="text-black/50 text-xs">{t.footer.copyright}</span>

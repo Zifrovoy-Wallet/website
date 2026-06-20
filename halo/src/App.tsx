@@ -12,6 +12,7 @@ import { FaqSection } from "./components/FaqSection";
 import { CtaSection } from "./components/CtaSection";
 import { Footer } from "./components/Footer";
 import { Loader } from "./components/Loader";
+import { LegalPage } from "./components/LegalPage";
 
 // Safety net: if the hero video stalls (slow network, codec issue, blocked
 // autoplay), force-clear the loader after this many ms so the page is never
@@ -19,6 +20,15 @@ import { Loader } from "./components/Loader";
 const LOADER_TIMEOUT_MS = 5000;
 
 export default function App() {
+  // Lightweight path routing for the static legal pages.
+  const path =
+    typeof window !== "undefined" ? window.location.pathname.replace(/\/+$/, "") : "";
+  if (path.endsWith("/terms")) return <LegalPage kind="terms" />;
+  if (path.endsWith("/privacy")) return <LegalPage kind="privacy" />;
+  return <Landing />;
+}
+
+function Landing() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
