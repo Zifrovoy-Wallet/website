@@ -13,7 +13,7 @@ export function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-20 px-6 py-5">
       <div className="max-w-[88rem] mx-auto flex items-center justify-between gap-4">
-        <a href="#" className="flex items-center gap-2 text-black">
+        <a href="/" className="flex items-center gap-2 text-black">
           <img
             src="/logo.png"
             alt=""

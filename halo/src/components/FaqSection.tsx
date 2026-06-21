@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Plus, MessageCircle, Mail } from "lucide-react";
+import { ArrowRight, Plus, Mail } from "lucide-react";
 import { useI18n } from "../i18n";
 import { useTheme } from "../theme";
 import { Reveal } from "./Reveal";
@@ -73,16 +73,9 @@ export function FaqSection() {
             </div>
             <div className="flex gap-2 shrink-0">
               <a
-                href="#"
-                aria-label="Telegram"
-                className="w-12 h-12 rounded-full bg-[var(--cta-bg)] text-white flex items-center justify-center hover:bg-[var(--cta-bg-hover)] hover:-translate-y-0.5 transition-all duration-300"
-              >
-                <MessageCircle className="w-5 h-5" strokeWidth={1.6} />
-              </a>
-              <a
-                href="#"
+                href="mailto:hi@zifrovoy.com"
                 aria-label="Email"
-                className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center hover:bg-white/80 hover:-translate-y-0.5 transition-all duration-300"
+                className="w-12 h-12 rounded-full bg-[var(--cta-bg)] text-white flex items-center justify-center hover:bg-[var(--cta-bg-hover)] hover:-translate-y-0.5 transition-all duration-300"
               >
                 <Mail className="w-5 h-5" strokeWidth={1.6} />
               </a>

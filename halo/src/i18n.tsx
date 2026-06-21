@@ -151,6 +151,7 @@ type Dict = {
     heading2: string;
     lead: string;
     button: string;
+    soon: string;
   };
   footer: {
     description: string;
@@ -186,8 +187,8 @@ const ru: Dict = {
   },
   stats: {
     s1: "Поддерживаемых сетей",
-    s2: "Активных пользователей",
-    s3: "Объём транзакций",
+    s2: "Самостоятельное хранение",
+    s3: "Финализация на Hyperliquid",
     s4: "Минимальная комиссия",
   },
   smart: {
@@ -291,14 +292,14 @@ const ru: Dict = {
   testi: {
     eyebrow: "Отзывы",
     heading: "Что говорят пользователи.",
-    rating: "4.9 на Google Play · 50K+ пользователей",
+    rating: "Скоро в App Store · ранний доступ",
     q1Text:
       "Zifrovoy - лучший кошелёк, которым я пользовался. Мгновенные переводы, низкие комиссии и потрясающий интерфейс.",
     q1Name: "Алексей М.",
     q1Role: "Блокчейн-аналитик",
     q1Init: "АМ",
     q2Text:
-      "Копитрейдинг перпов на Hyperliquid через Zifrovoy - буквально следую за топ-трейдерами в один клик. Сделал +60% за два месяца.",
+      "Копитрейдинг перпов на Hyperliquid через Zifrovoy - буквально следую за топ-трейдерами в один клик. Удобно и прозрачно: вижу каждую сделку и в любой момент могу остановиться.",
     q2Name: "Екатерина К.",
     q2Role: "Частный инвестор",
     q2Init: "ЕК",
@@ -350,17 +351,18 @@ const ru: Dict = {
     heading2: "это займёт 30 секунд.",
     lead: "Без подписок и скрытых платежей. Управляйте активами и копируйте топ-трейдеров уже сегодня.",
     button: "Создать бесплатный аккаунт",
+    soon: "Скоро в App Store",
   },
   footer: {
     description:
       "Храните, отправляйте и обменивайте криптовалюту - без лишних шагов и скрытых комиссий. Копитрейдинг перпов на Hyperliquid включён.",
     copyright: "© 2026 Zifrovoy. Все права защищены.",
     col1Title: "Продукт",
-    col1Items: ["Кошелёк", "Копитрейдинг", "Обмен", "Безопасность", "Цены"],
+    col1Items: ["Кошелёк", "Копитрейдинг", "Умный доход", "Вход через соцсети"],
     col2Title: "Компания",
-    col2Items: ["О нас", "Блог", "Карьера", "Контакты"],
-    col3Title: "Поддержка",
-    col3Items: ["Помощь", "Документация", "Условия", "Конфиденциальность"],
+    col2Items: ["Как начать", "FAQ", "Отзывы", "Контакты"],
+    col3Title: "Правовое",
+    col3Items: ["Условия использования", "Политика конфиденциальности"],
     legalTitle: "Правовая информация",
     terms: "Условия использования",
     privacy: "Политика конфиденциальности",
@@ -386,8 +388,8 @@ const en: Dict = {
   },
   stats: {
     s1: "Supported networks",
-    s2: "Active users",
-    s3: "Transaction volume",
+    s2: "Self-custody",
+    s3: "Finality on Hyperliquid",
     s4: "Minimum fee",
   },
   smart: {
@@ -491,14 +493,14 @@ const en: Dict = {
   testi: {
     eyebrow: "Reviews",
     heading: "What users are saying.",
-    rating: "4.9 on Google Play · 50K+ users",
+    rating: "Coming soon to App Store · early access",
     q1Text:
       "Zifrovoy is the best wallet I've used. Instant transfers, low fees and a stunning interface.",
     q1Name: "Alex M.",
     q1Role: "Blockchain analyst",
     q1Init: "AM",
     q2Text:
-      "Copy trading perps on Hyperliquid through Zifrovoy - I literally follow top traders in one click. Up 60% in two months.",
+      "Copy trading perps on Hyperliquid through Zifrovoy - I literally follow top traders in one click. Simple and transparent: I see every trade and can stop any time.",
     q2Name: "Kate K.",
     q2Role: "Private investor",
     q2Init: "KK",
@@ -550,17 +552,18 @@ const en: Dict = {
     heading2: "takes 30 seconds.",
     lead: "No subscriptions, no hidden charges. Manage assets and copy top traders starting today.",
     button: "Create a free account",
+    soon: "Coming soon to App Store",
   },
   footer: {
     description:
       "Store, send and swap crypto - no extra steps, no hidden fees. Hyperliquid perps copy trading included.",
     copyright: "© 2026 Zifrovoy. All rights reserved.",
     col1Title: "Product",
-    col1Items: ["Wallet", "Copy trading", "Swap", "Security", "Pricing"],
+    col1Items: ["Wallet", "Copy trading", "Smart income", "Social login"],
     col2Title: "Company",
-    col2Items: ["About", "Blog", "Careers", "Contact"],
-    col3Title: "Support",
-    col3Items: ["Help", "Docs", "Terms", "Privacy"],
+    col2Items: ["How to start", "FAQ", "Reviews", "Contact"],
+    col3Title: "Legal",
+    col3Items: ["Terms of Use", "Privacy Policy"],
     legalTitle: "Legal",
     terms: "Terms of Service",
     privacy: "Privacy Policy",
@@ -586,8 +589,8 @@ const kk: Dict = {
   },
   stats: {
     s1: "Қолдау көрсетілетін желілер",
-    s2: "Белсенді қолданушылар",
-    s3: "Транзакциялар көлемі",
+    s2: "Дербес сақтау",
+    s3: "Hyperliquid-те финализация",
     s4: "Ең төменгі комиссия",
   },
   smart: {
@@ -691,14 +694,14 @@ const kk: Dict = {
   testi: {
     eyebrow: "Пікірлер",
     heading: "Қолданушылар не дейді.",
-    rating: "Google Play-де 4.9 · 50K+ қолданушы",
+    rating: "Жақында App Store'да · ерте қол жеткізу",
     q1Text:
       "Zifrovoy - мен қолданған ең үздік әмиян. Лезде аударымдар, төмен комиссиялар және керемет интерфейс.",
     q1Name: "Алексей М.",
     q1Role: "Блокчейн-талдаушы",
     q1Init: "АМ",
     q2Text:
-      "Zifrovoy арқылы Hyperliquid перптерін копитрейдинг - үздік трейдерлерді бір басумен қайталаймын. Екі айда +60% жасадым.",
+      "Zifrovoy арқылы Hyperliquid перптерін копитрейдинг - үздік трейдерлерді бір басумен қайталаймын. Ыңғайлы әрі ашық: әр мәмілені көремін және кез келген сәтте тоқтай аламын.",
     q2Name: "Екатерина К.",
     q2Role: "Жеке инвестор",
     q2Init: "ЕК",
@@ -750,17 +753,18 @@ const kk: Dict = {
     heading2: "30 секунд алады.",
     lead: "Жазылымсыз және жасырын төлемдерсіз. Активтерді басқарыңыз және үздік трейдерлерді бүгіннен бастап көшіріңіз.",
     button: "Тегін аккаунт құру",
+    soon: "Жақында App Store'да",
   },
   footer: {
     description:
       "Криптовалютаны сақтаңыз, жіберіңіз және айырбастаңыз - артық қадамдар мен жасырын комиссияларсыз. Hyperliquid перптерінің копитрейдингі қосылған.",
     copyright: "© 2026 Zifrovoy. Барлық құқықтары қорғалған.",
     col1Title: "Өнім",
-    col1Items: ["Әмиян", "Копитрейдинг", "Айырбас", "Қауіпсіздік", "Бағалар"],
+    col1Items: ["Әмиян", "Копитрейдинг", "Ақылды табыс", "Әлеуметтік желі арқылы кіру"],
     col2Title: "Компания",
-    col2Items: ["Біз туралы", "Блог", "Мансап", "Байланыс"],
-    col3Title: "Қолдау",
-    col3Items: ["Көмек", "Құжаттама", "Шарттар", "Құпиялылық"],
+    col2Items: ["Қалай бастау", "FAQ", "Пікірлер", "Байланыс"],
+    col3Title: "Құқықтық",
+    col3Items: ["Пайдалану шарттары", "Құпиялылық саясаты"],
     legalTitle: "Құқықтық ақпарат",
     terms: "Пайдалану шарттары",
     privacy: "Құпиялылық саясаты",
@@ -786,8 +790,8 @@ const ky: Dict = {
   },
   stats: {
     s1: "Колдоого алынган тармактар",
-    s2: "Активдүү колдонуучулар",
-    s3: "Транзакциялардын көлөмү",
+    s2: "Өз алдынча сактоо",
+    s3: "Hyperliquid'те финалдашуу",
     s4: "Эң аз комиссия",
   },
   smart: {
@@ -891,14 +895,14 @@ const ky: Dict = {
   testi: {
     eyebrow: "Пикирлер",
     heading: "Колдонуучулар эмне дейт.",
-    rating: "Google Play'де 4.9 · 50K+ колдонуучу",
+    rating: "Жакында App Store'до · эрте жетүү",
     q1Text:
       "Zifrovoy - мен колдонгон эң мыкты капчык. Тез которуулар, төмөн комиссиялар жана сонун интерфейс.",
     q1Name: "Алексей М.",
     q1Role: "Блокчейн-аналитик",
     q1Init: "АМ",
     q2Text:
-      "Zifrovoy аркылуу Hyperliquid перптерин копитрейдинг - мыкты трейдерлерди бир баскыч менен кайталайм. Эки айда +60% жасадым.",
+      "Zifrovoy аркылуу Hyperliquid перптерин копитрейдинг - мыкты трейдерлерди бир баскыч менен кайталайм. Ыңгайлуу жана ачык: ар бир бүтүмдү көрөм жана каалаган убакта токтото алам.",
     q2Name: "Екатерина К.",
     q2Role: "Жеке инвестор",
     q2Init: "ЕК",
@@ -950,17 +954,18 @@ const ky: Dict = {
     heading2: "30 секунд алат.",
     lead: "Жазылуусуз жана жашыруун төлөмсүз. Активдерди башкарып, мыкты трейдерлерди бүгүндөн баштап көчүрүңүз.",
     button: "Бекер аккаунт түзүү",
+    soon: "Жакында App Store'до",
   },
   footer: {
     description:
       "Криптовалютаны сактаңыз, жөнөтүңүз жана алмаштырыңыз - ашыкча кадамсыз жана жашыруун комиссиясыз. Hyperliquid перптеринин копитрейдинги кошулган.",
     copyright: "© 2026 Zifrovoy. Бардык укуктар корголгон.",
     col1Title: "Продукт",
-    col1Items: ["Капчык", "Копитрейдинг", "Алмашуу", "Коопсуздук", "Баалар"],
+    col1Items: ["Капчык", "Копитрейдинг", "Акылдуу киреше", "Соцтармак аркылуу кирүү"],
     col2Title: "Компания",
-    col2Items: ["Биз жөнүндө", "Блог", "Карьера", "Байланыш"],
-    col3Title: "Колдоо",
-    col3Items: ["Жардам", "Документация", "Шарттар", "Купуялык"],
+    col2Items: ["Кантип баштоо", "FAQ", "Пикирлер", "Байланыш"],
+    col3Title: "Укуктук",
+    col3Items: ["Колдонуу шарттары", "Купуялык саясаты"],
     legalTitle: "Укуктук маалымат",
     terms: "Колдонуу шарттары",
     privacy: "Купуялык саясаты",
@@ -986,8 +991,8 @@ const uz: Dict = {
   },
   stats: {
     s1: "Qo'llab-quvvatlanadigan tarmoqlar",
-    s2: "Faol foydalanuvchilar",
-    s3: "Tranzaksiyalar hajmi",
+    s2: "Mustaqil saqlash",
+    s3: "Hyperliquid'da yakunlash",
     s4: "Minimal komissiya",
   },
   smart: {
@@ -1091,14 +1096,14 @@ const uz: Dict = {
   testi: {
     eyebrow: "Sharhlar",
     heading: "Foydalanuvchilar nima deydi.",
-    rating: "Google Play'da 4.9 · 50K+ foydalanuvchi",
+    rating: "Tez orada App Store'da · erta kirish",
     q1Text:
       "Zifrovoy - men ishlatgan eng yaxshi hamyon. Bir zumda o'tkazmalar, past komissiyalar va zo'r interfeys.",
     q1Name: "Alex M.",
     q1Role: "Blokcheyn-tahlilchi",
     q1Init: "AM",
     q2Text:
-      "Zifrovoy orqali Hyperliquid'da perplar uchun copy trading - eng yaxshi treyderlarni bir bosishda kuzataman. Ikki oyda +60% qildim.",
+      "Zifrovoy orqali Hyperliquid'da perplar uchun copy trading - eng yaxshi treyderlarni bir bosishda kuzataman. Qulay va shaffof: har bir bitimni ko'raman va istalgan vaqtda to'xtata olaman.",
     q2Name: "Katya K.",
     q2Role: "Xususiy investor",
     q2Init: "KK",
@@ -1150,17 +1155,18 @@ const uz: Dict = {
     heading2: "30 soniya oladi.",
     lead: "Obunasiz va yashirin to'lovlarsiz. Aktivlarni boshqaring va eng yaxshi treyderlarni bugundan ko'chirib oling.",
     button: "Bepul hisob yaratish",
+    soon: "Tez orada App Store'da",
   },
   footer: {
     description:
       "Kriptovalyutani saqlang, yuboring va ayirboshlang - ortiqcha qadamlar va yashirin komissiyalarsiz. Hyperliquid perplari uchun copy trading kiritilgan.",
     copyright: "© 2026 Zifrovoy. Barcha huquqlar himoyalangan.",
     col1Title: "Mahsulot",
-    col1Items: ["Hamyon", "Copy trading", "Ayirboshlash", "Xavfsizlik", "Narxlar"],
+    col1Items: ["Hamyon", "Copy trading", "Aqlli daromad", "Ijtimoiy tarmoq orqali kirish"],
     col2Title: "Kompaniya",
-    col2Items: ["Biz haqimizda", "Blog", "Karyera", "Aloqa"],
-    col3Title: "Qo'llab-quvvatlash",
-    col3Items: ["Yordam", "Hujjatlar", "Shartlar", "Maxfiylik"],
+    col2Items: ["Qanday boshlash", "FAQ", "Sharhlar", "Aloqa"],
+    col3Title: "Huquqiy",
+    col3Items: ["Foydalanish shartlari", "Maxfiylik siyosati"],
     legalTitle: "Huquqiy ma'lumot",
     terms: "Foydalanish shartlari",
     privacy: "Maxfiylik siyosati",

@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { useI18n } from "../i18n";
 import { useTheme } from "../theme";
 import { Reveal } from "./Reveal";
@@ -50,15 +49,12 @@ export function CtaSection() {
             <p className="text-black/70 text-lg leading-relaxed max-w-md mb-8">
               {t.cta.lead}
             </p>
-            <a
-              href="#"
-              className="bg-dot-pattern inline-flex items-center gap-3 bg-[var(--cta-bg)] text-white text-base md:text-lg font-medium pl-8 pr-2 py-2 rounded-full hover:bg-[var(--cta-bg-hover)] transition-colors duration-200"
+            <span
+              className="bg-dot-pattern inline-flex items-center gap-3 bg-[var(--cta-bg)] text-white text-base md:text-lg font-medium px-8 py-3.5 rounded-full cursor-default select-none"
+              aria-disabled="true"
             >
-              {t.cta.button}
-              <span className="bg-white rounded-full p-2 flex items-center justify-center">
-                <ArrowRight className="w-5 h-5 text-black" />
-              </span>
-            </a>
+              {t.cta.soon}
+            </span>
           </div>
         </Reveal>
       </div>

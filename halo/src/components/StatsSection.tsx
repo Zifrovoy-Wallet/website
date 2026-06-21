@@ -6,8 +6,8 @@ export function StatsSection() {
   const { t } = useI18n();
   const stats = [
     { value: "15+", label: t.stats.s1 },
-    { value: "50K+", label: t.stats.s2 },
-    { value: "$120M+", label: t.stats.s3 },
+    { value: "100%", label: t.stats.s2 },
+    { value: "<1s", label: t.stats.s3 },
     { value: "0.1%", label: t.stats.s4 },
   ];
 
