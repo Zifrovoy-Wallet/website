@@ -96,7 +96,7 @@ export function HeroSection({ onReady }: HeroSectionProps = {}) {
           onCanPlay={onReady}
           onError={onReady}
         />
-        <div className="relative z-10 flex flex-col items-start justify-start h-full p-12 pt-36">
+        <div className="relative z-10 flex flex-col items-start justify-start h-full p-7 pt-28 sm:p-10 sm:pt-32 md:p-12 md:pt-36">
           <span
             className="inline-flex items-center gap-2 bg-black/[0.06] text-black/70 text-xs font-medium uppercase px-3 py-1.5 rounded-full mb-5 backdrop-blur-sm"
             style={{ letterSpacing: "0.14em" }}
@@ -105,7 +105,7 @@ export function HeroSection({ onReady }: HeroSectionProps = {}) {
             {t.hero.badge}
           </span>
           <h1
-            className="text-black text-5xl md:text-6xl font-medium leading-tight max-w-xl mb-4"
+            className="text-black text-4xl sm:text-5xl md:text-6xl font-medium leading-tight max-w-xl mb-4"
             style={{ letterSpacing: "-0.04em" }}
           >
             {t.hero.title1}
@@ -131,7 +131,7 @@ export function HeroSection({ onReady }: HeroSectionProps = {}) {
           </a>
 
           {/* Supported networks marquee */}
-          <div className="mt-24 w-full max-w-md overflow-hidden">
+          <div className="mt-auto pt-12 w-full max-w-md overflow-hidden">
             <style>{`
               @keyframes marquee {
                 0%   { transform: translateX(0); }

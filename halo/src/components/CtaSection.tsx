@@ -39,7 +39,7 @@ export function CtaSection() {
           <div className="relative z-10 p-10 md:p-16 max-w-2xl">
             <p className="text-black/60 text-sm mb-3">{t.cta.eyebrow}</p>
             <h2
-              className="text-black text-5xl md:text-7xl font-medium leading-none mb-6"
+              className="text-black text-4xl sm:text-5xl md:text-7xl font-medium leading-none mb-6"
               style={{ letterSpacing: "-0.04em" }}
             >
               {t.cta.heading1}

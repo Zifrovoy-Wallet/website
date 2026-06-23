@@ -31,7 +31,7 @@ export function SocialLoginSection() {
           <div className="relative z-10 max-w-xl p-10 md:p-16">
             <p className="text-black/55 text-sm mb-3">{t.social.eyebrow}</p>
             <h2
-              className="text-black text-5xl md:text-6xl font-medium leading-none mb-8"
+              className="text-black text-4xl sm:text-5xl md:text-6xl font-medium leading-none mb-8"
               style={{ letterSpacing: "-0.04em" }}
             >
               {t.social.heading1}

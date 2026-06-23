@@ -44,7 +44,7 @@ export function HowToStartSection() {
           <div>
             <p className="text-black/60 text-sm mb-3">{t.how.eyebrow}</p>
             <h2
-              className="text-black text-5xl md:text-6xl font-medium leading-none mb-6"
+              className="text-black text-4xl sm:text-5xl md:text-6xl font-medium leading-none mb-6"
               style={{ letterSpacing: "-0.04em" }}
             >
               {t.how.heading1}

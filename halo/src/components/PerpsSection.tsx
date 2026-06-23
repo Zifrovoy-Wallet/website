@@ -17,7 +17,7 @@ export function PerpsSection() {
           <div>
             <p className="text-black/60 text-sm mb-3">{t.perps.eyebrow}</p>
             <h2
-              className="text-black text-5xl md:text-6xl font-medium leading-none mb-6"
+              className="text-black text-4xl sm:text-5xl md:text-6xl font-medium leading-none mb-6"
               style={{ letterSpacing: "-0.04em" }}
             >
               {t.perps.heading1}
@@ -58,7 +58,7 @@ export function PerpsSection() {
                 </span>
               </div>
               <h3
-                className="text-black text-4xl md:text-5xl font-medium leading-tight mb-5"
+                className="text-black text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-5"
                 style={{ letterSpacing: "-0.03em" }}
               >
                 {t.perps.featTitle1}

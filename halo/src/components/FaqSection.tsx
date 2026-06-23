@@ -32,7 +32,7 @@ export function FaqSection() {
               {t.faq.eyebrow}
             </p>
             <h2
-              className="text-white text-5xl md:text-6xl font-medium leading-none mb-6 relative z-10"
+              className="text-white text-4xl sm:text-5xl md:text-6xl font-medium leading-none mb-6 relative z-10"
               style={{ letterSpacing: "-0.04em" }}
             >
               {t.faq.heading1}
@@ -129,9 +129,9 @@ export function FaqSection() {
                   </button>
                   <div
                     className="overflow-hidden transition-all duration-500 ease-out"
-                    style={{ maxHeight: isOpen ? "320px" : "0px" }}
+                    style={{ maxHeight: isOpen ? "640px" : "0px" }}
                   >
-                    <p className="text-black/70 text-base leading-relaxed px-7 pb-7 pr-16 max-w-[60ch]">
+                    <p className="text-black/70 text-base leading-relaxed px-7 pb-7 pr-7 md:pr-16 max-w-[60ch]">
                       {f.a}
                     </p>
                   </div>

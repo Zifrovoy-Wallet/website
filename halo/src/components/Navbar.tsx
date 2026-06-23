@@ -1,7 +1,10 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { LANGS, useI18n } from "../i18n";
 
 export function Navbar() {
   const { t, lang, setLang } = useI18n();
+  const [open, setOpen] = useState(false);
 
   const links = [
     { href: "#why", label: t.nav.advantages },
@@ -72,12 +75,44 @@ export function Navbar() {
           </select>
           <a
             href="#cta"
-            className="bg-[var(--cta-bg)] text-white text-base font-medium px-7 py-2.5 rounded-full hover:bg-[var(--cta-bg-hover)] transition-colors duration-200"
+            className="hidden md:inline-flex bg-[var(--cta-bg)] text-white text-base font-medium px-7 py-2.5 rounded-full hover:bg-[var(--cta-bg-hover)] transition-colors duration-200"
+          >
+            {t.nav.createAccount}
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-label="Menu"
+            aria-expanded={open}
+            className="md:hidden w-10 h-10 flex items-center justify-center rounded-full border border-black/10 text-black hover:bg-black/5 transition-colors"
+          >
+            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile dropdown menu */}
+      {open && (
+        <div className="md:hidden mt-3 max-w-[88rem] mx-auto rounded-2xl border border-black/10 bg-[var(--body-bg)] shadow-xl shadow-black/5 p-2">
+          {links.map((l) => (
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className="block px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-black/5 transition-colors"
+            >
+              {l.label}
+            </a>
+          ))}
+          <a
+            href="#cta"
+            onClick={() => setOpen(false)}
+            className="block mt-1 px-4 py-3 rounded-xl text-base font-medium text-center bg-[var(--cta-bg)] text-white hover:bg-[var(--cta-bg-hover)] transition-colors"
           >
             {t.nav.createAccount}
           </a>
         </div>
-      </div>
+      )}
     </nav>
   );
 }

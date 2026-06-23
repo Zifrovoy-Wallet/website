@@ -46,7 +46,7 @@ export function TestimonialsSection() {
           <div>
             <p className="text-black/60 text-sm mb-3">{t.testi.eyebrow}</p>
             <h2
-              className="text-black text-5xl md:text-6xl font-medium leading-none max-w-3xl"
+              className="text-black text-4xl sm:text-5xl md:text-6xl font-medium leading-none max-w-3xl"
               style={{ letterSpacing: "-0.04em" }}
             >
               {t.testi.heading}
